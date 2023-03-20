@@ -1,0 +1,7 @@
+Thank you for your booking!
+
+Name: Calvin
+Email: Calvin@Calvin.com
+Movie: Tron
+Screening: 1pm
+Number of Tickets: 2

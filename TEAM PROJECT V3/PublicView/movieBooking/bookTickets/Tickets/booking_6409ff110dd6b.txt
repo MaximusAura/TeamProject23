@@ -1,0 +1,7 @@
+Thank you for your booking!
+
+Name: cal
+Email: ads@saffsa.com
+Movie: Tron
+Screening: 4pm
+Number of Tickets: 1

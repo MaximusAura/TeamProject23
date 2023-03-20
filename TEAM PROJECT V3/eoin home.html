@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:100);
+    
+        .Logo {
+            background-color: rgb(151, 197, 186);
+            opacity: 1.3;
+            color: rgb(5, 15, 9);
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: 400;
+            margin: 0px auto 0px 40 px;
+            display: flex;
+            align-items: center;
+            font-family: Monoton;
+            letter-spacing: 1px;
+    
+        }
+    
+        .Logo span {
+            font-size: 1rem;
+            margin-left: 5px;
+            font-weight: 700;
+            letter-spacing: 2px;
+    
+    
+        }
+    
+        .background {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/abstract.jpg');
+            background-size: cover;
+        }
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: rgb(151, 197, 186);
+    padding: 1rem 2rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #444;
+  }
+  
+  .featured-movies {
+    padding: 2rem;
+  }
+  
+  .featured-movies h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .movie {
+    text-align: center;
+  }
+  
+  .movie img {
+    max-width: 100%;
+    min-height: 325px;
+    height: auto;
+    display: block;
+  }
+  
+  .movie h3 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  footer {
+    background-color: rgb(84, 130, 122);
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .social-media a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-media a:hover {
+    color: rgb(151, 197, 186);
+  }
+
+  .movie img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s;
+  }
+  
+  .movie img:hover {
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.25), 0 5px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  
+
+
+
+  .movie {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .movie img {
+    z-index: 1;
+    position: relative;
+  }
+  
+  .movie-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+    z-index: 2;
+  }
+  
+  .movie:hover .movie-description {
+    transform: translateY(0%);
+  }
+
+    </style>
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Website</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+</head>
+<body>
+  <header>
+    <nav>
+        <div>
+            <a href="Homepage.html" class="Logo">
+                Lace <span>Cinema</span>
+            </a>
+        </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Screenings</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Purchase</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="featured-movies">
+    <h2>Movies Available to Watch</h2>
+    <div class="movie-grid">
+       
+      <div class="movie">
+        <img src="Posters/2001.jpg" alt="Movie 1">
+        <h3>2001</h3>
+        <div class="movie-description">
+            <p>After uncovering a mysterious artifact buried beneath the Lunar surface, a spacecraft is sent to Jupiter to find its origins - a spacecraft manned by two men and the supercomputer H.A.L. 9000.</p>
+          </div>
+      </div>
+      <div class="movie">
+        <img src="Posters/avatar.jpg" alt="Movie 2">
+        <h3>Avatar</h3>
+        <div class="movie-description">
+          <p>Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.</p>
+        </div>
+      </div>
+      <div class="movie">
+        <img src="Posters/dead.jpg" alt="Movie 3">
+        <h3>Dawn of the Dead</h3>
+        <div class="movie-description">
+          <p>During an escalating zombie epidemic, two Philadelphia SWAT team members, a traffic reporter and his TV executive girlfriend seek refuge in a secluded shopping mall.</p>
+        </div>
+      </div>
+      <div class="movie">
+        <img src="Posters/LikeWater.PNG" alt="Movie 4">
+        <h3>Like water for Chocolate</h3>
+        <div class="movie-description">
+          <p>When tradition prevents her from marrying the man she loves, a young woman discovers she has a unique talent for cooking.</p>
+        </div>
+      </div>
+      <div class="movie">
+        <img src="Posters/Lyle.jpg" alt="Movie 5">
+        <h3>Lyle Lyle Crocodile</h3>
+        <div class="movie-description">
+          <p>Follows the title reptile who lives in a house on East 88th Street in New York City. Lyle enjoys helping the Primm family with everyday chores and playing with the neighborhood kids but one neighbor insists that Lyle belongs in a zoo. Mr. Grumps and his cat, Loretta, do not like crocodiles, and Lyle tries to prove that he is not as bad as others might first think.</p>
+        </div>
+      </div>
+      <div class="movie">
+        <img src="Posters/Matilda.jpg" alt="Movie 6">
+        <h3>Matilda Musical</h3>
+        <div class="movie-description">
+          <p>An adaptation of the Tony and Olivier award-winning musical. Matilda tells the story of an extraordinary girl who, armed with a sharp mind and a vivid imagination, dares to take a stand to change her story with miraculous results.</p>
+        </div>
+      </div>
+      <div class="movie">
+        <img src="Posters/Otto.jpg" alt="Movie 7">
+        <h3>Otto</h3>
+        <div class="movie-description">
+          <p>Otto is a grump who's given up on life following the loss of his wife and wants to end it all. When a young family moves in nearby, he meets his match in quick-witted Marisol, leading to a friendship that will turn his world around.</p>
+        </div>
+      </div>
+      <div class="movie">
+        <img src="Posters/Puss.jpg" alt="Movie 8">
+        <h3>Puss in Boots</h3>
+        <div class="movie-description">
+          <p>When Puss in Boots discovers that his passion for adventure has taken its toll and he has burned through eight of his nine lives, he launches an epic journey to restore them by finding the mythical Last Wish.</p>
+        </div>
+      </div>
+      <div class="movie">
+        <img src="Posters/PussInBoots.PNG" alt="Movie 9">
+        <h3>Puss in Boots</h3>
+        <div class="movie-description">
+          <p>When Puss in Boots discovers that his passion for adventure has taken its toll and he has burned through eight of his nine lives, he launches an epic journey to restore them by finding the mythical Last Wish.</p>
+        </div>
+      </div>
+      <div class="movie">
+        <img src="Posters/Strange.PNG" alt="Movie 10">
+        <h3>Strange World</h3>
+        <div class="movie-description">
+          <p>The legendary Clades are a family of explorers whose differences threaten to topple their latest and most crucial mission.</p>
+        </div>
+      </div>
+      <div class="movie">
+        <img src="Posters/Till.PNG" alt="Movie 11">
+        <h3>Till</h3>
+        <div class="movie-description">
+          <p>In 1955, after Emmett Till is murdered in a brutal lynching, his mother vows to expose the racism behind the attack while working to have those involved brought to justice.</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <footer>
+    <div class="social-media">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+</body>
+</html>

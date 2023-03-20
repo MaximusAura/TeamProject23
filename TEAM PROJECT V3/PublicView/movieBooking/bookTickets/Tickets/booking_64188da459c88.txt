@@ -1,0 +1,7 @@
+Thank you for your booking!
+
+Name: xsdsfg
+Email: sda@123.ie
+Movie: avatar
+Screening: 1
+Number of Tickets: 1

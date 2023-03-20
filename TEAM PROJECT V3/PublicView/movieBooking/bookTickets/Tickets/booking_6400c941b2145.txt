@@ -1,0 +1,7 @@
+Thank you for your booking!
+
+Name: Eoin 
+Email: Eoinod35@gmail.com
+Movie: Tron
+Screening: 10am
+Number of Tickets: 2
